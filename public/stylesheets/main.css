@@ -1988,6 +1988,24 @@ button.button {
   position: relative;
   z-index: 50; }
 
+#sendButton:hover {
+  transform: translateY(-2px);
+  background-color: #e00467;
+  box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
+}
+/* #contact-form:first-child {
+  padding: 75px 65px 75px 65px;
+
+  box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
+} */
+#contact-form {
+  display: flex;
+  justify-content: center;
+} 
+#sendButton {
+  background-color: rgb(252, 0, 114);
+  color: white;
+}
 .nav-02__link {
   display: inline-block;
   text-decoration: none;
