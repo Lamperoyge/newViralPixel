@@ -25,10 +25,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'ViralPixel - digital art' });
 });
 
-// router.post('/send/contact/:body', function(req, res, next) {
-//   sgMail.send(msg(req.params.body));
-//   res.send('');
-//   res.status(200)
-// })
+router.post('/send/contact/:body', function(req, res, next) {
+  sgMail.send(msg(req.params.body));
+  res.send('');
+  res.status(200)
+})
 
 module.exports = router;

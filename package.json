@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "wb": "webpack-dev-server --config webpack.config.js --open --hot --mode development"
+    "wb": "webpack-dev-server --config webpack.config.js --open --hot --mode development",
+    "heroku-postbuild": "webpack -p --config webpack.config.js"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
@@ -19,7 +20,9 @@
     "morgan": "~1.9.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
+    "react-scroll-to-component": "^1.0.2",
     "scroll-to-element": "^2.0.0",
+    "validator": "^10.9.0",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"

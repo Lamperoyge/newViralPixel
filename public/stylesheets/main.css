@@ -30,7 +30,7 @@ body {
 p {
   margin-bottom: 1em;
   margin-top: 1em;
-  font-family: "Lora", serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.4; }
 
 [tabindex="-1"]:focus {
@@ -8930,7 +8930,7 @@ button.button {
       color: #636363; }
 
 .footer-02 {
-  background-color: #303030;
+  background-color: #151515;
   padding: 40px 0; }
   .footer-02 .social-buttons__link {
     opacity: 0.5; }
@@ -8960,7 +8960,7 @@ button.button {
   margin-bottom: 10px; }
 
 .footer-02__text {
-  color: rgba(255, 255, 255, 0.5);
+  color: #848484;
   line-height: 1.4; }
   @media (max-width: 750px) {
     .footer-02__text {
@@ -12015,6 +12015,15 @@ button.button {
   top: 0;
   bottom: 0; }
 
+  #contact-form > div {
+    padding: 3em;
+    box-shadow: 0 2px 8px 0 rgba(136, 144, 195, 0.22), 0 8px 15px 0 rgba(37, 44, 97, 0.17);
+    border-radius: 10px;
+  }
+
+  .MuiFormControl-root-1 {
+    padding-bottom: 2em !important;
+  }
 /* Prevent selection and tap highlights */
 .pswp__container,
 .pswp__img {
