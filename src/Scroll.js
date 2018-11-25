@@ -4,6 +4,7 @@ export default class addScrolling {
         this.navbarFAQ = document.getElementById('faqButton');
         this.whatWeDo = document.getElementById('whatWeDoButton')
         this.talkToUs = document.getElementById('talkToUsBanner');
+        this.arrowState = false;
     }
     addScrollIntoView(nav, comp) {
         nav.addEventListener('click', (e) => {
@@ -23,6 +24,18 @@ export default class addScrolling {
         })
     }
     init() {
+        document.querySelector('.open-nav-menu').addEventListener('click', () => {
+            if(this.arrowState === false) {
+                document.querySelector('.js-menu').style.left = "0%";
+                document.querySelector('.fa').style.transform = "rotate(180deg)";
+                this.arrowState = true
+            }
+            else {
+                document.querySelector('.js-menu').style.left = "100%";
+                document.querySelector('.fa').style.transform = "rotate(0deg)";
+                this.arrowState = false
+            }
+        })
         this.addScrollIntoView(this.talkToUs, 'contactUsTitle')
         this.addScrollIntoView(this.navbarContact, 'contactUsTitle')
         this.addScrollIntoView(this.navbarFAQ, 'faqHeading')

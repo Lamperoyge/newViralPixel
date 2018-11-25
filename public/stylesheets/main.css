@@ -1886,6 +1886,8 @@ button.button {
   max-height: 30px;
   margin-right: 10px; }
 
+ 
+
 .nav-01__logo_text {
   vertical-align: middle;
   font-weight: 700;
@@ -2017,12 +2019,19 @@ button.button {
   vertical-align: middle;
   max-height: 55px;
   margin-right: 10px; }
-
+  @media all and (max-width: 480px) {
+    .nav-02__logo_img {
+      max-height: 35px;
+    }
+  }
 .nav-02__logo_text {
   vertical-align: middle;
   font-weight: 700;
   letter-spacing: 0.01em;
   font-size: 16px; }
+
+
+
 
 .nav-02__list {
   padding: 0;
@@ -2030,25 +2039,56 @@ button.button {
   list-style: none; }
   @media (max-width: 900px) {
     .nav-02__list {
-      opacity: 0;
+      /* opacity: 0;
       visibility: hidden;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      
       flex-wrap: wrap;
       flex-direction: column-reverse;
       position: fixed;
+      
+      margin: auto; */
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      align-items: center;
       left: 0;
       right: 0;
       bottom: 0;
       top: 0;
-      margin: auto;
       background-color: white;
       transition: opacity 0.25s ease, transform 0.25s ease; }
+      body > header > nav > div > div > div.nav-02__links.js-menu {
+        position: relative;
+        left: 100%;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+    .fa {
+      display: inline-block !important;
+      transition: all 0.3s ease;
+    }
+    .open-nav-menu {
+      display: block !important;
+      position: relative;
+      left: 74%;
+      z-index: 10;
+    }
+
+      .nav-02__list li a {
+        font-size: 11px;
+        padding: 0px;
+        min-height: unset;
+      }
+
       .state-opened-menu .nav-02__list {
         visibility: visible;
         opacity: 1; } }
 
+
+.open-nav-menu {
+  display: none;
+}
 .nav-02__item {
   display: inline-block;
   margin-right: 15px; }
@@ -2057,7 +2097,7 @@ button.button {
   @media (max-width: 900px) {
     .nav-02__item {
       transform: translateY(5px);
-      opacity: 0;
+      /* opacity: 0; */
       margin-right: 0;
       margin-bottom: 10px;
       text-align: center;
@@ -2085,6 +2125,22 @@ button.button {
       .state-opened-menu .nav-02__item {
         opacity: 1;
         transform: none; } }
+
+
+
+/*SIDEBAR */
+
+#sidebar {
+  position: absolute;
+  top: 7vh;
+  z-index: 10000;
+  background-color: white;
+  left: 71%;
+  height: 100vh;
+}
+#sidebar ul {
+  list-style-type: none;
+}
 
 @media (min-width: 901px) {
   .nav-02__burger {
