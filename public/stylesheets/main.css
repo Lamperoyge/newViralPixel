@@ -2315,6 +2315,9 @@ button.button {
     margin-left: 0.3em; }
 
 @media (max-width: 500px) {
+  #img-howTo {
+    display: none;
+  }
   .header-03__buttons, .header-13__buttons, .header-14__buttons, .header-15__buttons {
     text-align: center; }
     .header-03__buttons .buttons-set__item, .header-13__buttons .buttons-set__item, .header-14__buttons .buttons-set__item, .header-15__buttons .buttons-set__item {
