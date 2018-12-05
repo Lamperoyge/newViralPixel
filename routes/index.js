@@ -5,6 +5,8 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
+
+
 const msg = (data) => {
   let newData = JSON.parse(data);
   let email = newData.email

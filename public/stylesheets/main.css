@@ -2,7 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
-
+#learn-more-web {
+  display: flex;
+  justify-content: center;
+}
 html {
   height: 100%;
   font-size: 16px;
